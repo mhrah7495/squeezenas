@@ -9,7 +9,7 @@ from .arch.operations import Ops
 def get_squeezenas_mac_small():
     # noinspection PyPep8
     genotype = [Ops.inverse_residual_k3_e1_g2, Ops.inverse_residual_k3_e1_g1, Ops.inverse_residual_k3_e1_g1, Ops.inverse_residual_k3_e1_g2, Ops.inverse_residual_k5_e6_g1, Ops.inverse_residual_k3_e1_g1, Ops.inverse_residual_k3_e1_g1, Ops.inverse_residual_k3_e1_g2_d2, Ops.inverse_residual_k5_e6_g1, Ops.inverse_residual_k3_e6_g1_d2, Ops.residual_skipish, Ops.inverse_residual_k3_e1_g2, Ops.inverse_residual_k5_e6_g1, Ops.inverse_residual_k3_e3_g1_d2, Ops.inverse_residual_k3_e1_g1_d2, Ops.inverse_residual_k3_e1_g1_d2, Ops.inverse_residual_k3_e6_g1_d2, Ops.inverse_residual_k3_e1_g2_d2, Ops.inverse_residual_k3_e1_g2_d2, Ops.inverse_residual_k3_e1_g2_d2]
-    weight_path = "weights/mac_small.pth"
+    weight_path = "./weights/mac_small.pth"
     hyperparameters = get_cityscapes_hyperparams_small()
     model = SqueezeNASNetCityscapes(hyperparameters, genotype, lr_aspp=True)
     state_dict = torch.load(weight_path, map_location=torch.device('cpu'))
