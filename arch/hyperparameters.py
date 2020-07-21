@@ -1,7 +1,7 @@
 import dataclasses
 
-from arch.model import InvertResidualNetBlockMetaHyperparameters
-from arch.model_cityscapes import SqueezeNASNetCityscapesHyperparameters
+from .model import InvertResidualNetBlockMetaHyperparameters
+from .model_cityscapes import SqueezeNASNetCityscapesHyperparameters
 
 
 def get_cityscapes_hyperparams_small(width_multiplier=1.0, num_classes=19, init_channels=16, mid_channels=128,
