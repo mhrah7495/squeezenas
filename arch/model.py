@@ -3,8 +3,8 @@ from typing import Sequence, Optional
 
 from torch import nn
 
-from arch.operations import Ops
-from arch.utils import Flatten, conv3x3_bn, conv_1x1_bn
+from .operations import Ops
+from .utils import Flatten, conv3x3_bn, conv_1x1_bn
 
 
 @dataclass(frozen=True)
