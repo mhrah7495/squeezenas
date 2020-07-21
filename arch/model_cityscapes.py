@@ -8,9 +8,9 @@ import torch.nn.functional as F
 from torch import nn
 from torch.nn import CrossEntropyLoss
 
-from arch.model import InvertResidualNetBlockMetaHyperparameters, SqueezeNASNet, \
+from .model import InvertResidualNetBlockMetaHyperparameters, SqueezeNASNet, \
     InverseResidualMetaNetHyperparameters
-from arch.operations import Ops
+from .operations import Ops
 
 
 @dataclass(frozen=True)
