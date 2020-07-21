@@ -1,9 +1,9 @@
 import torch
 
-from arch.hyperparameters import get_cityscapes_hyperparams_small, get_cityscapes_hyperparams_large, \
+from .hyperparameters import get_cityscapes_hyperparams_small, get_cityscapes_hyperparams_large, \
     get_cityscapes_hyperparams_xlarge
-from arch.model_cityscapes import SqueezeNASNetCityscapes
-from arch.operations import Ops
+from .model_cityscapes import SqueezeNASNetCityscapes
+from .operations import Ops
 
 
 def get_squeezenas_mac_small():
